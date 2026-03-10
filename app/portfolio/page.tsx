@@ -3,35 +3,38 @@ import Link from 'next/link'
 export const metadata = { title: 'Portfolio — Oros Photography' }
 
 const photos = [
-  { src: '/images/Liz%20Portrait.jpg', alt: 'Portrait', cols: 1, ratio: '3/4' },
-  { src: '/images/Graduations-2.jpg', alt: 'Graduation portraits', cols: 2, ratio: '4/3' },
-  { src: '/images/Carlos.jpg', alt: 'Portrait', cols: 1, ratio: '3/4' },
-  { src: '/images/Ashley.jpg', alt: 'Portrait', cols: 1, ratio: '3/4' },
-  { src: '/images/Patrick.jpg', alt: 'Portrait', cols: 1, ratio: '3/4' },
-  { src: '/images/Graduations-3.jpg', alt: 'Graduation portraits', cols: 1, ratio: '3/4' },
-  { src: '/images/Sofia.jpg', alt: 'Portrait', cols: 1, ratio: '3/4' },
-  { src: '/images/Graduations-5.jpg', alt: 'Graduation portraits', cols: 2, ratio: '16/9' },
-  { src: '/images/Graduations-6.jpg', alt: 'Graduation portraits', cols: 1, ratio: '3/4' },
-  { src: '/images/Andrea.jpg', alt: 'Portrait', cols: 1, ratio: '3/4' },
-  { src: '/images/Graduations-4.jpg', alt: 'Graduation portraits', cols: 1, ratio: '3/4' },
+  { src: '/images/Liz%20Portrait.jpg', alt: 'Portrait' },
+  { src: '/images/Ashley.jpg', alt: 'Portrait' },
+  { src: '/images/Carlos.jpg', alt: 'Portrait' },
+  { src: '/images/Sofia.jpg', alt: 'Portrait' },
+  { src: '/images/Patrick.jpg', alt: 'Portrait' },
+  { src: '/images/Andrea.jpg', alt: 'Portrait' },
+  { src: '/images/Graduations.jpg', alt: 'Graduation portraits' },
+  { src: '/images/Graduations-2.jpg', alt: 'Graduation portraits' },
+  { src: '/images/Graduations-3.jpg', alt: 'Graduation portraits' },
+  { src: '/images/Graduations-4.jpg', alt: 'Graduation portraits' },
+  { src: '/images/Graduations-5.jpg', alt: 'Graduation portraits' },
+  { src: '/images/Graduations-6.jpg', alt: 'Graduation portraits' },
 ]
 
 export default function Portfolio() {
   return (
     <>
-      <style>{`.photo-item img { transition: transform 0.4s ease; } .photo-item:hover img { transform: scale(1.03); }`}</style>
-
       <section style={{ borderBottom: '1px solid var(--light)', padding: '80px 80px 60px' }}>
         <div className="eyebrow">Portfolio</div>
         <h1 style={{ fontStyle: 'italic' }}>Recent work</h1>
       </section>
 
       <section>
-        <div style={{ padding: '48px', maxWidth: '1400px', margin: '0 auto' }}>
+        <div style={{ padding: '32px 48px', maxWidth: '1400px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3px' }}>
             {photos.map((p, i) => (
-              <div key={i} className="photo-item" style={{ overflow: 'hidden', aspectRatio: p.ratio, gridColumn: `span ${p.cols}` }}>
-                <img src={p.src} alt={p.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              <div key={i} style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
+                <img
+                  src={p.src}
+                  alt={p.alt}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
               </div>
             ))}
           </div>
