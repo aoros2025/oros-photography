@@ -43,8 +43,8 @@ export default function About() {
       <section>
         <div className="section">
           <div className="eyebrow" style={{ marginBottom: '32px' }}>My Work</div>
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '2px' }}>
-            <div style={{ overflow: 'hidden', aspectRatio: '16/10' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2px' }}>
+            <div style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
               <img src="/images/Graduations-2.jpg" alt="Graduation portraits" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <div style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
