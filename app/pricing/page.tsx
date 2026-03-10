@@ -38,7 +38,7 @@ export default function Pricing() {
           <div>
             <div className="eyebrow">Package 02</div>
             <h2 style={{ fontStyle: 'italic', marginBottom: '12px' }}>Outdoor Session</h2>
-            <p style={{ fontFamily: 'var(--serif)', fontSize: '48px', lineHeight: 1, marginBottom: '28px' }}>$100</p>
+            <p style={{ fontFamily: 'var(--serif)', fontSize: '48px', lineHeight: 1, marginBottom: '28px' }}>$75</p>
             <p style={{ marginBottom: '16px' }}>Take your portraits outside at a location of your choice within Allegheny County. Natural light, real environments, and a relaxed atmosphere.</p>
             <p style={{ marginBottom: '32px' }}>Perfect for students, creatives, and professionals who want something with more personality.</p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '36px' }}>
