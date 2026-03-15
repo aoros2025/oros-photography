@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = { title: 'Portfolio — Oros Photography' }
 
@@ -25,14 +26,17 @@ export default function Portfolio() {
     { src: '/images/Patrick_Grad.jpg', alt: 'Graduation portraits' },
   ]
 
-  const Grid = ({ photos }) => (
+  const Grid = ({ photos, priority = false }: { photos: { src: string; alt: string }[], priority?: boolean }) => (
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3px' }}>
       {photos.map((p, i) => (
-        <div key={i} style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
-          <img
+        <div key={i} style={{ overflow: 'hidden', aspectRatio: '3/4', position: 'relative' }}>
+          <Image
             src={p.src}
             alt={p.alt}
-            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            priority={priority && i < 3}
           />
         </div>
       ))}
@@ -49,7 +53,7 @@ export default function Portfolio() {
       <section>
         <div style={{ padding: '32px 48px', maxWidth: '1400px', margin: '0 auto' }}>
           <div className="eyebrow" style={{ marginBottom: '24px' }}>Headshots</div>
-          <Grid photos={headshots} />
+          <Grid photos={headshots} priority={true} />
         </div>
       </section>
 
