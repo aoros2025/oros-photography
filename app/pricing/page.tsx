@@ -14,7 +14,7 @@ export default function Pricing() {
       <section style={{ borderBottom: '1px solid var(--light)' }}>
         <div className="section" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
           <div style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
-            <img src="/images/Angel.jpg" alt="Outdoor Headshot Session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/images/Angel.jpg" alt=" Outdoor Headshot Session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div>
             <div className="eyebrow">Package 01</div>
@@ -36,7 +36,7 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="btn btn-dark">Book Headshot Session</Link>
+            <Link href="https://orosphotography.hbportal.co/public/69b63f633a2fe3003b54779e" target="_blank" rel="noopener noreferrer" className="btn btn-dark">Book Headshot Session</Link>
           </div>
         </div>
       </section>
@@ -64,7 +64,7 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="btn btn-dark">Book Graduation Session</Link>
+            <Link href="https://orosphotography.hbportal.co/public/69b68f0b5eb23c0038619540" target="_blank" rel="noopener noreferrer" className="btn btn-dark">Book Graduation Session</Link>
           </div>
           <div style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
             <img src="/images/Graduations-4.jpg" alt="Graduation Portrait Session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
