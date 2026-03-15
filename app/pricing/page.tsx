@@ -10,56 +10,73 @@ export default function Pricing() {
         <h1 style={{ fontStyle: 'italic', maxWidth: '600px' }}>Simple, transparent packages.</h1>
       </section>
 
+      {/* Package 01 — Headshots */}
       <section style={{ borderBottom: '1px solid var(--light)' }}>
         <div className="section" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
           <div style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
-            <img src="/images/Angel.jpg" alt="Studio Session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/images/Angel.jpg" alt="Outdoor Headshot Session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div>
             <div className="eyebrow">Package 01</div>
-            <h2 style={{ fontStyle: 'italic', marginBottom: '12px' }}>Studio Session</h2>
+            <h2 style={{ fontStyle: 'italic', marginBottom: '12px' }}>Outdoor Headshot Session</h2>
             <p style={{ fontFamily: 'var(--serif)', fontSize: '48px', lineHeight: 1, marginBottom: '28px' }}>$50</p>
-            <p style={{ marginBottom: '16px' }}>A relaxed indoor portrait session at my private studio in Verona, PA. Perfect for professional headshots, LinkedIn photos, or personal portraits.</p>
-            <p style={{ marginBottom: '32px' }}>Controlled lighting means consistent, polished results no matter the weather or time of day.</p>
+            <p style={{ marginBottom: '16px' }}>An outdoor portrait session on Pitt's campus. Perfect for researchers, undergrads, grad students, and academics who need photos that actually work for them.</p>
+            <p style={{ marginBottom: '32px' }}>Natural light, real environments, and a relaxed atmosphere — LinkedIn-ready results without the stuffy studio feel.</p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '36px' }}>
-              {['30–45 minute session', '10 fully edited selects', 'Private online gallery delivery', 'High-resolution files included', 'Studio in Verona, PA'].map(item => (
+              {[
+                '30-minute session',
+                '5 fully edited images',
+                'High-resolution delivery',
+                'LinkedIn ready',
+                'On campus — Pitt',
+                '5 business day turnaround',
+              ].map(item => (
                 <li key={item} style={{ fontSize: '14px', color: 'var(--dark)', display: 'flex', gap: '12px', alignItems: 'center' }}>
                   <span style={{ color: 'var(--mid)' }}>—</span>{item}
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="btn btn-dark">Book Studio Session</Link>
+            <Link href="/contact" className="btn btn-dark">Book Headshot Session</Link>
           </div>
         </div>
       </section>
 
+      {/* Package 02 — Graduation */}
       <section style={{ background: 'var(--off-white)', borderBottom: '1px solid var(--light)' }}>
         <div className="section" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
           <div>
             <div className="eyebrow">Package 02</div>
-            <h2 style={{ fontStyle: 'italic', marginBottom: '12px' }}>Outdoor Session</h2>
-            <p style={{ fontFamily: 'var(--serif)', fontSize: '48px', lineHeight: 1, marginBottom: '28px' }}>$75</p>
-            <p style={{ marginBottom: '16px' }}>Take your portraits outside at a location of your choice within Allegheny County. Natural light, real environments, and a relaxed atmosphere.</p>
-            <p style={{ marginBottom: '32px' }}>Perfect for students, creatives, and professionals who want something with more personality.</p>
+            <h2 style={{ fontStyle: 'italic', marginBottom: '12px' }}>Graduation Portrait Session</h2>
+            <p style={{ fontFamily: 'var(--serif)', fontSize: '48px', lineHeight: 1, marginBottom: '28px' }}>$100</p>
+            <p style={{ marginBottom: '16px' }}>For seniors, grad students, and anyone ready to celebrate how far they've come. Wear your cap and gown, dress up, or both — whatever makes you feel your best.</p>
+            <p style={{ marginBottom: '32px' }}>We'll meet at your preferred campus location. Bring any meaningful props — diploma, honor cords, department pennant. Come photo-ready and we'll handle the rest.</p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '36px' }}>
-              {['45–60 minute session', '15–20 fully edited selects', 'Private online gallery delivery', 'Your choice of location in Allegheny County', 'High-resolution files included'].map(item => (
+              {[
+                '60-minute session',
+                '25 fully edited images',
+                'High-resolution delivery',
+                'Cap & gown welcome',
+                'On campus — Pitt',
+                '7 business day turnaround',
+              ].map(item => (
                 <li key={item} style={{ fontSize: '14px', color: 'var(--dark)', display: 'flex', gap: '12px', alignItems: 'center' }}>
                   <span style={{ color: 'var(--mid)' }}>—</span>{item}
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="btn btn-dark">Book Outdoor Session</Link>
+            <Link href="/contact" className="btn btn-dark">Book Graduation Session</Link>
           </div>
           <div style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
-            <img src="/images/Sofia.jpg" alt="Outdoor Session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/images/Graduations-4.jpg" alt="Graduation Portrait Session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
         </div>
       </section>
 
+      {/* Package 03 — Custom */}
       <section style={{ borderBottom: '1px solid var(--light)' }}>
         <div className="section" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
           <div style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
-            <img src="/images/Graduations-4.jpg" alt="Custom Session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/images/Sofia.jpg" alt="Custom Session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div>
             <div className="eyebrow">Package 03</div>
