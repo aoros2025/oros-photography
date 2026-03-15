@@ -2,23 +2,43 @@ import Link from 'next/link'
 
 export const metadata = { title: 'Portfolio — Oros Photography' }
 
-const photos = [
-  { src: '/images/Liz%20Portrait.jpg', alt: 'Portrait' },
-  { src: '/images/Ashley.jpg', alt: 'Portrait' },
-  { src: '/images/Grace.jpg', alt: 'Portrait' },
-  { src: '/images/Sofia.jpg', alt: 'Portrait' },
-  { src: '/images/Maddie.jpg', alt: 'Portrait' },
-  { src: '/images/Patrick.jpg', alt: 'Portrait' },
-  { src: '/images/Andrea.jpg', alt: 'Portrait' },
-  { src: '/images/Graduations.jpg', alt: 'Graduation portraits' },
-  { src: '/images/Graduations-2.jpg', alt: 'Graduation portraits' },
-  { src: '/images/Graduations-3.jpg', alt: 'Graduation portraits' },
-  { src: '/images/Graduations-4.jpg', alt: 'Graduation portraits' },
-  { src: '/images/Graduations-5.jpg', alt: 'Graduation portraits' },
-  { src: '/images/Graduations-6.jpg', alt: 'Graduation portraits' },
-]
-
 export default function Portfolio() {
+  const headshots = [
+    { src: '/images/Liz%20Portrait.jpg', alt: 'Portrait' },
+    { src: '/images/Ashley.jpg', alt: 'Portrait' },
+    { src: '/images/Grace.jpg', alt: 'Portrait' },
+    { src: '/images/Sofia.jpg', alt: 'Portrait' },
+    { src: '/images/Maddie.jpg', alt: 'Portrait' },
+    { src: '/images/Patrick.jpg', alt: 'Portrait' },
+    { src: '/images/Andrea.jpg', alt: 'Portrait' },
+  ]
+
+  const graduations = [
+    { src: '/images/Graduations.jpg', alt: 'Graduation portraits' },
+    { src: '/images/Graduations-2.jpg', alt: 'Graduation portraits' },
+    { src: '/images/Graduations-3.jpg', alt: 'Graduation portraits' },
+    { src: '/images/Graduations-4.jpg', alt: 'Graduation portraits' },
+    { src: '/images/Graduations-5.jpg', alt: 'Graduation portraits' },
+    { src: '/images/Graduations-6.jpg', alt: 'Graduation portraits' },
+    { src: '/images/Victoria.jpg', alt: 'Graduation portraits' },
+    { src: '/images/Grad_Trio.jpg', alt: 'Graduation portraits' },
+    { src: '/images/Patrick_Grad.jpg', alt: 'Graduation portraits' },
+  ]
+
+  const Grid = ({ photos }) => (
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3px' }}>
+      {photos.map((p, i) => (
+        <div key={i} style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
+          <img
+            src={p.src}
+            alt={p.alt}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
+      ))}
+    </div>
+  )
+
   return (
     <>
       <section style={{ borderBottom: '1px solid var(--light)', padding: '80px 80px 60px' }}>
@@ -28,17 +48,15 @@ export default function Portfolio() {
 
       <section>
         <div style={{ padding: '32px 48px', maxWidth: '1400px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3px' }}>
-            {photos.map((p, i) => (
-              <div key={i} style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
-                <img
-                  src={p.src}
-                  alt={p.alt}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                />
-              </div>
-            ))}
-          </div>
+          <div className="eyebrow" style={{ marginBottom: '24px' }}>Headshots</div>
+          <Grid photos={headshots} />
+        </div>
+      </section>
+
+      <section>
+        <div style={{ padding: '32px 48px', maxWidth: '1400px', margin: '0 auto' }}>
+          <div className="eyebrow" style={{ marginBottom: '24px' }}>Graduation Portraits</div>
+          <Grid photos={graduations} />
         </div>
       </section>
 
