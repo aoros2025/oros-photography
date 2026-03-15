@@ -38,8 +38,8 @@ export default function Home() {
           <div className="eyebrow" style={{ marginBottom: '48px' }}>What I Offer</div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1px', background: 'var(--light)' }}>
             {[
-              { num: '01', title: 'Studio Headshots', desc: 'Controlled lighting, clean backgrounds, polished results. Perfect for LinkedIn, lab bios, and professional profiles.', price: '$50', href: '/pricing' },
-              { num: '02', title: 'Outdoor Portraits', desc: 'Natural light sessions at a location of your choice within Allegheny County. Authentic and vibrant.', price: '$75', href: '/pricing' },
+              { num: '01', title: 'Outdoor Headshot Session', desc: 'A 30-minute outdoor session on Pitt\'s campus. Perfect for LinkedIn, lab bios, and professional profiles. Delivered in 5 business days.', price: '$50', href: '/pricing' },
+              { num: '02', title: 'Graduation Portrait Session', desc: 'A 60-minute session on campus for seniors, grad students, and anyone ready to celebrate how far they\'ve come. Cap and gown welcome.', price: '$100', href: '/pricing' },
               { num: '03', title: 'Custom Sessions', desc: 'Group shoots, special occasions, unique locations. Reach out and we will figure it out together.', price: 'Contact', href: '/contact' },
             ].map((s) => (
               <div key={s.num} style={{ background: 'var(--white)', padding: '48px 40px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
