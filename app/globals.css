@@ -485,3 +485,192 @@ footer {
     gap: 12px;
   }
 }
+
+/* -------------------------------- */
+/* GLOBAL PAGE GRID HELPERS */
+/* -------------------------------- */
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.four-col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.center-section {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* -------------------------------- */
+/* HERO SECTIONS */
+/* -------------------------------- */
+
+.page-hero {
+  border-bottom: 1px solid var(--light);
+  padding: 80px 80px 60px;
+}
+
+
+/* -------------------------------- */
+/* CONTACT PAGE */
+/* -------------------------------- */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.contact-hero {
+  border-bottom: 1px solid var(--light);
+  padding: 80px 80px 60px;
+}
+
+
+/* -------------------------------- */
+/* PORTFOLIO PAGE */
+/* -------------------------------- */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+.portfolio-hero {
+  border-bottom: 1px solid var(--light);
+  padding: 80px 80px 60px;
+}
+
+
+/* -------------------------------- */
+/* PRICING PAGE */
+/* -------------------------------- */
+
+.pricing-hero {
+  border-bottom: 1px solid var(--light);
+  padding: 80px 80px 60px;
+}
+
+.pricing-package-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+
+/* -------------------------------- */
+/* ABOUT PAGE */
+/* -------------------------------- */
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.about-work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+
+/* -------------------------------- */
+/* EXPERIENCE PAGE */
+/* -------------------------------- */
+
+.experience-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.experience-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.experience-faq-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+
+/* -------------------------------- */
+/* MOBILE RESPONSIVE SYSTEM */
+/* -------------------------------- */
+
+@media (max-width: 900px) {
+
+  .page-hero,
+  .portfolio-hero,
+  .pricing-hero,
+  .contact-hero {
+    padding: 50px 24px 40px;
+  }
+
+  .two-col-grid,
+  .pricing-package-grid,
+  .about-hero-grid,
+  .experience-hero-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .three-col-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .four-col-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-faq-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
