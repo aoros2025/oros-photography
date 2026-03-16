@@ -52,8 +52,7 @@ const testimonials = [
     name: 'Past Client',
   },
   {
-    quote:
-      'I had a great photographer and cannot wait to see the photos.',
+    quote: 'I had a great photographer and cannot wait to see the photos.',
     name: 'Past Client',
   },
   {
@@ -77,8 +76,19 @@ const trustPoints = [
 export default function Home() {
   return (
     <>
-    <section className="home-hero" style={{ minHeight: 'calc(100vh - 64px)', display: 'grid', alignItems: 'stretch' }}>
-        <div className="home-hero-content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '32px' }}>
+      <section
+        className="home-hero"
+        style={{ minHeight: 'calc(100vh - 64px)', display: 'grid', alignItems: 'stretch' }}
+      >
+        <div
+          className="home-hero-content"
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            gap: '32px',
+          }}
+        >
           <div className="eyebrow">Pittsburgh Portrait Photography</div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
@@ -91,13 +101,20 @@ export default function Home() {
             </h1>
 
             <p style={{ maxWidth: '430px', fontSize: '16px', margin: 0 }}>
-              Pittsburgh portrait photography for students, professionals, and creatives who
-              want images that feel polished, natural, and true to who they are.
+              Pittsburgh portrait photography for students, professionals, and creatives who want
+              images that feel polished, natural, and true to who they are.
             </p>
 
-            <p style={{ maxWidth: '430px', fontSize: '14px', color: 'var(--mid)', margin: 0 }}>
-              Ideal for LinkedIn, lab websites, graduation announcements, personal branding,
-              and milestone moments.
+            <p
+              style={{
+                maxWidth: '430px',
+                fontSize: '14px',
+                color: 'var(--mid)',
+                margin: 0,
+              }}
+            >
+              Ideal for LinkedIn, lab websites, graduation announcements, personal branding, and
+              milestone moments.
             </p>
           </div>
 
@@ -127,14 +144,14 @@ export default function Home() {
           borderBottom: '1px solid var(--light)',
         }}
       >
-      <div
-  className="section-sm home-about-grid"
-  style={{
-    display: 'grid',
-    gap: '48px',
-    alignItems: 'center',
-  }}
->
+        <div
+          className="section-sm home-about-grid"
+          style={{
+            display: 'grid',
+            gap: '48px',
+            alignItems: 'center',
+          }}
+        >
           <div>
             <div className="eyebrow">About</div>
             <h2 style={{ marginBottom: '24px', fontStyle: 'italic' }}>
@@ -169,9 +186,9 @@ export default function Home() {
       <section style={{ background: 'var(--white)', borderBottom: '1px solid var(--light)' }}>
         <div className="section-sm">
           <div
+            className="home-trust-grid"
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
               gap: '24px',
             }}
           >
@@ -195,11 +212,10 @@ export default function Home() {
                 </div>
                 <p
                   style={{
-                    margin: 0,
                     color: 'var(--mid)',
                     fontSize: '14px',
                     maxWidth: '320px',
-                    marginInline: 'auto',
+                    margin: '0 auto',
                     lineHeight: 1.7,
                   }}
                 >
@@ -218,9 +234,9 @@ export default function Home() {
           </div>
 
           <div
+            className="home-services-grid"
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
               gap: '1px',
               background: 'var(--light)',
             }}
@@ -267,6 +283,8 @@ export default function Home() {
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     marginTop: '8px',
+                    gap: '16px',
+                    flexWrap: 'wrap',
                   }}
                 >
                   <span
@@ -307,11 +325,13 @@ export default function Home() {
       >
         <div className="section">
           <div
+            className="home-portfolio-header"
             style={{
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'flex-end',
               marginBottom: '32px',
+              gap: '20px',
             }}
           >
             <div>
@@ -324,7 +344,10 @@ export default function Home() {
             </Link>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
+          <div
+            className="home-portfolio-grid"
+            style={{ display: 'grid', gap: '2px' }}
+          >
             {portfolioImages.map((img, i) => (
               <div key={i} style={{ overflow: 'hidden', aspectRatio: img.ratio }}>
                 <img
@@ -345,9 +368,9 @@ export default function Home() {
           </div>
 
           <div
+            className="home-testimonials-grid"
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
               gap: '24px',
             }}
           >
@@ -391,7 +414,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section style={{ borderTop: '1px solid var(--light)', borderBottom: '1px solid var(--light)' }}>
+      <section
+        style={{
+          borderTop: '1px solid var(--light)',
+          borderBottom: '1px solid var(--light)',
+        }}
+      >
         <div
           className="section"
           style={{
@@ -436,7 +464,7 @@ export default function Home() {
 
       <section style={{ background: 'var(--off-white)' }}>
         <div
-          className="section-sm"
+          className="section-sm home-instagram-row"
           style={{
             display: 'flex',
             justifyContent: 'space-between',
