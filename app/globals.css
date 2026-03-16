@@ -302,3 +302,21 @@ footer {
     padding: 50px 24px 40px;
   }
 }
+.home-hero {
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-hero-content {
+  padding: 80px 48px 80px 80px;
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    min-height: auto !important;
+  }
+
+  .home-hero-content {
+    padding: 50px 24px;
+  }
+}
