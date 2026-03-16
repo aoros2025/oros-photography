@@ -459,3 +459,29 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.experience-hero-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.experience-steps-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.experience-faq-row {
+  grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 900px) {
+  .experience-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-faq-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
