@@ -329,3 +329,54 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.home-about-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-trust-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.home-services-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home-portfolio-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home-testimonials-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .home-about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-portfolio-header {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .home-instagram-row {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
