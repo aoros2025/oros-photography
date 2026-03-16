@@ -98,15 +98,25 @@ nav {
 
 /* Section helpers */
 .section {
-  padding: 100px 48px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 80px 48px;
 }
 
 .section-sm {
-  padding: 72px 48px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 80px 48px;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 50px 24px;
+  }
+
+  .section-sm {
+    padding: 50px 24px;
+  }
 }
 
 /* Typography */
