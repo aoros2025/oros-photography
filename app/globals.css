@@ -408,3 +408,29 @@ footer {
     padding-bottom: 24px;
   }
 }
+ .pricing-hero {
+  border-bottom: 1px solid var(--light);
+  padding: 80px 80px 60px;
+}
+
+.pricing-package-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .pricing-hero {
+    padding: 50px 24px 40px;
+  }
+
+  .pricing-package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-text-first {
+    order: 1;
+  }
+
+  .pricing-text-first + div {
+    order: 2;
+  }
+}
