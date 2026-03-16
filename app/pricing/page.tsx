@@ -5,7 +5,7 @@ export const metadata = { title: 'Pricing — Oros Photography' }
 export default function Pricing() {
   return (
     <>
-      <section style={{ borderBottom: '1px solid var(--light)', padding: '80px 80px 60px' }}>
+      <section className="pricing-hero">
         <div className="eyebrow">Pricing</div>
         <h1 style={{ fontStyle: 'italic', maxWidth: '600px' }}>Simple, transparent pricing.</h1>
       </section>
@@ -13,11 +13,10 @@ export default function Pricing() {
       {/* Package 01 */}
       <section style={{ borderBottom: '1px solid var(--light)' }}>
         <div
-          className="section"
+          className="section pricing-package-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '80px',
+            gap: '48px',
             alignItems: 'center',
           }}
         >
@@ -31,7 +30,9 @@ export default function Pricing() {
 
           <div>
             <div className="eyebrow">Package 01</div>
-            <h2 style={{ fontStyle: 'italic', marginBottom: '12px' }}>Outdoor Headshot Session</h2>
+            <h2 style={{ fontStyle: 'italic', marginBottom: '12px' }}>
+              Outdoor Headshot Session
+            </h2>
 
             <p
               style={{
@@ -104,15 +105,14 @@ export default function Pricing() {
       {/* Package 02 */}
       <section style={{ background: 'var(--off-white)', borderBottom: '1px solid var(--light)' }}>
         <div
-          className="section"
+          className="section pricing-package-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '80px',
+            gap: '48px',
             alignItems: 'center',
           }}
         >
-          <div>
+          <div className="pricing-text-first">
             <div className="eyebrow">Package 02</div>
             <h2 style={{ fontStyle: 'italic', marginBottom: '12px' }}>
               Graduation Portrait Session
@@ -196,11 +196,10 @@ export default function Pricing() {
       {/* Package 03 */}
       <section style={{ borderBottom: '1px solid var(--light)' }}>
         <div
-          className="section"
+          className="section pricing-package-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '80px',
+            gap: '48px',
             alignItems: 'center',
           }}
         >
@@ -243,7 +242,10 @@ export default function Pricing() {
       </section>
 
       <section>
-        <div className="section" style={{ textAlign: 'center', maxWidth: '580px', margin: '0 auto' }}>
+        <div
+          className="section"
+          style={{ textAlign: 'center', maxWidth: '580px', margin: '0 auto' }}
+        >
           <h2 style={{ fontStyle: 'italic', marginBottom: '20px' }}>
             Not sure which package is right for you?
           </h2>
