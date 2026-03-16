@@ -17,15 +17,14 @@ export default function Contact() {
       </section>
 
       <section>
-        <div
-          className="section"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '80px',
-            alignItems: 'flex-start',
-          }}
-        >
+      <div
+  className="section contact-grid"
+  style={{
+    display: 'grid',
+    gap: '60px',
+    alignItems: 'flex-start',
+  }}
+>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
             <div style={{ overflow: 'hidden', aspectRatio: '4/3' }}>
               <img
