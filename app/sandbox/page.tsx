@@ -471,7 +471,7 @@ export default function Home() {
           </div>
 
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/oros_photography/"
             target="_blank"
             rel="noreferrer"
             className="btn btn-outline"
