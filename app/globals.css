@@ -380,3 +380,31 @@ footer {
     align-items: flex-start !important;
   }
 }
+.portfolio-hero {
+  border-bottom: 1px solid var(--light);
+  padding: 80px 80px 60px;
+}
+
+.portfolio-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-section-wrap {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media (max-width: 900px) {
+  .portfolio-hero {
+    padding: 50px 24px 40px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-section-wrap {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
