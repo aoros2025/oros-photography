@@ -30,11 +30,10 @@ export default function About() {
     <>
       <section style={{ borderBottom: '1px solid var(--light)' }}>
         <div
-          className="section"
+          className="section about-hero-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '80px',
+            gap: '48px',
             alignItems: 'center',
           }}
         >
@@ -94,9 +93,9 @@ export default function About() {
       >
         <div className="section">
           <div
+            className="about-cards-grid"
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(4, 1fr)',
               gap: '1px',
               background: 'var(--light)',
             }}
@@ -147,7 +146,10 @@ export default function About() {
             Portraits that feel natural, confident, and true to the moment.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2px' }}>
+          <div
+            className="about-work-grid"
+            style={{ display: 'grid', gap: '2px' }}
+          >
             <div style={{ overflow: 'hidden', aspectRatio: '3/4' }}>
               <img
                 src="/images/Graduations-2.jpg"
