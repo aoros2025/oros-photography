@@ -282,3 +282,13 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.contact-hero {
+  border-bottom: 1px solid var(--light);
+  padding: 80px 80px 60px;
+}
+
+@media (max-width: 900px) {
+  .contact-hero {
+    padding: 50px 24px 40px;
+  }
+}
