@@ -77,23 +77,8 @@ const trustPoints = [
 export default function Home() {
   return (
     <>
-      <section
-        style={{
-          minHeight: 'calc(100vh - 64px)',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          alignItems: 'stretch',
-        }}
-      >
-        <div
-          style={{
-            padding: '80px 48px 80px 80px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            gap: '32px',
-          }}
-        >
+    <section className="home-hero" style={{ minHeight: 'calc(100vh - 64px)', display: 'grid', alignItems: 'stretch' }}>
+        <div className="home-hero-content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '32px' }}>
           <div className="eyebrow">Pittsburgh Portrait Photography</div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
