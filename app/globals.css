@@ -320,3 +320,12 @@ footer {
     padding: 50px 24px;
   }
 }
+.home-about-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .home-about-grid {
+    grid-template-columns: 1fr;
+  }
+}
