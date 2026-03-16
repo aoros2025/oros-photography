@@ -5,8 +5,8 @@ import Script from 'next/script'
 export default function Contact() {
   return (
     <>
-      <section style={{ borderBottom: '1px solid var(--light)', padding: '80px 80px 60px' }}>
-        <div className="eyebrow">Contact</div>
+<section className="contact-hero">
+  <div className="eyebrow">Contact</div>
         <h1 style={{ fontStyle: 'italic', maxWidth: '600px', marginBottom: '16px' }}>
           Let us work together.
         </h1>
