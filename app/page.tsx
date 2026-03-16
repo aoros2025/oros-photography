@@ -127,15 +127,14 @@ export default function Home() {
           borderBottom: '1px solid var(--light)',
         }}
       >
-        <div
-          className="section-sm"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '80px',
-            alignItems: 'center',
-          }}
-        >
+      <div
+  className="section-sm home-about-grid"
+  style={{
+    display: 'grid',
+    gap: '48px',
+    alignItems: 'center',
+  }}
+>
           <div>
             <div className="eyebrow">About</div>
             <h2 style={{ marginBottom: '24px', fontStyle: 'italic' }}>
