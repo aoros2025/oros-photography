@@ -48,25 +48,30 @@ const portfolioImages = [
 const testimonials = [
   {
     quote:
-      'Angel made the whole process feel easy and natural. I finally have headshots that actually feel like me.',
-    name: 'Pitt Graduate Student',
+      'Thank you so much for the session. I truly appreciate you so much and I love how the photos turned out.',
+    name: 'Past Client',
   },
   {
     quote:
-      'The photos came out polished, professional, and perfect for LinkedIn and my portfolio.',
-    name: 'Pittsburgh Creative',
+      'I had a great photographer and cannot wait to see the photos.',
+    name: 'Past Client',
   },
   {
     quote:
-      'I was nervous before the shoot, but Angel gave great direction and made me feel comfortable right away.',
-    name: 'Recent Graduate',
+      'Thank you for the directions on how to download the photos. Very appreciated.',
+    name: 'Past Client',
   },
 ]
 
-const stats = [
-  { value: '50+', label: 'Portrait sessions completed' },
-  { value: '5 days', label: 'Typical headshot delivery' },
-  { value: 'Pittsburgh', label: 'Based and booking locally' },
+const trustPoints = [
+  {
+    title: 'Natural Editing',
+    text: 'Clean, polished portraits that still look like you, never overedited or overly retouched.',
+  },
+  {
+    title: 'Guided, Comfortable Sessions',
+    text: 'Simple direction throughout your session so you feel relaxed, confident, and fully yourself.',
+  },
 ]
 
 export default function Home() {
@@ -156,8 +161,7 @@ export default function Home() {
               professionals, and creatives put their best face forward.
             </p>
             <p style={{ marginBottom: '16px' }}>
-              I started photographing people because I believe everyone deserves photos that
-              represent them with confidence, warmth, and intention.
+              I capture honest, natural images without overediting, just the true you.
             </p>
             <p style={{ marginBottom: '32px' }}>
               Whether you are updating your LinkedIn, building your brand, or celebrating a
@@ -183,15 +187,15 @@ export default function Home() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
+              gridTemplateColumns: 'repeat(2, 1fr)',
               gap: '24px',
             }}
           >
-            {stats.map((stat) => (
+            {trustPoints.map((item) => (
               <div
-                key={stat.label}
+                key={item.title}
                 style={{
-                  padding: '28px 20px',
+                  padding: '28px 24px',
                   border: '1px solid var(--light)',
                   textAlign: 'center',
                 }}
@@ -199,13 +203,24 @@ export default function Home() {
                 <div
                   style={{
                     fontFamily: 'var(--serif)',
-                    fontSize: '32px',
-                    marginBottom: '8px',
+                    fontSize: '28px',
+                    marginBottom: '10px',
                   }}
                 >
-                  {stat.value}
+                  {item.title}
                 </div>
-                <p style={{ margin: 0, color: 'var(--mid)', fontSize: '14px' }}>{stat.label}</p>
+                <p
+                  style={{
+                    margin: 0,
+                    color: 'var(--mid)',
+                    fontSize: '14px',
+                    maxWidth: '320px',
+                    marginInline: 'auto',
+                    lineHeight: 1.7,
+                  }}
+                >
+                  {item.text}
+                </p>
               </div>
             ))}
           </div>
@@ -352,9 +367,9 @@ export default function Home() {
               gap: '24px',
             }}
           >
-            {testimonials.map((testimonial) => (
+            {testimonials.map((testimonial, index) => (
               <div
-                key={testimonial.name}
+                key={`${testimonial.name}-${index}`}
                 style={{
                   border: '1px solid var(--light)',
                   padding: '32px',
